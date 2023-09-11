@@ -1,0 +1,79 @@
+input{
+    color: white;
+}
+.login-form .input-pet
+{
+    /* border: none; */
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    /* font-size: large; */
+}
+.login-form input[type='text']
+{
+    /* border: none; */
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    /* font-size: large; */
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 75%;
+    height: 80%;
+    /* justify-content: space-around; */
+    padding: 20px 0;
+    row-gap: 20px;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    animation: transitionRight 0.5s;
+}
+
+@keyframes transitionRight{
+    from{
+        margin-left: -1000px;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+input[type='submit']{
+    margin-top: 10px;
+    background-color: rgb(255, 255, 193);
+    color: black;
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 40px;
+    font-weight: bolder;
+    transition: all .5s ease-in-out;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(235, 235, 178);
+    cursor: pointer;
+}
+.remember-passowrd{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid; */
+}
+@media (max-width:700px)
+{
+    /* .login-form input */
+    .login-form .input-pet{
+        font-size: 22px;
+    }
+    .sign-up-form .input-pet{
+        font-size: 18px;
+    }
+}
